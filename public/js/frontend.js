@@ -1999,7 +1999,13 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony import */ var _frontend_components_Postlist_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../frontend/components/Postlist.vue */ "./resources/js/frontend/components/Postlist.vue");
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    Postlist: _frontend_components_Postlist_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+  }
+});
 
 /***/ }),
 
@@ -2205,15 +2211,10 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _vm._m(0);
+  return _c("div", [_c("h1", [_vm._v("Pagina Home")]), _vm._v(" "), _c("h2", [_vm._v("Lista Post")]), _vm._v(" "), _c("Postlist")], 1);
 };
 
-var staticRenderFns = [function () {
-  var _vm = this,
-      _c = _vm._self._c;
-
-  return _c("div", [_c("h1", [_vm._v("\n        Home\n    ")])]);
-}];
+var staticRenderFns = [];
 render._withStripped = true;
 
 
