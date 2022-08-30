@@ -4,11 +4,13 @@
 
         <div class="container">
 
-            <h1>Hello {{  message  }}</h1>
+            <router-view></router-view>
+
+            <!-- <h1>Hello {{  message  }}</h1>
 
             <h2>Lista Post</h2>
 
-            <Postlist></Postlist>
+            <Postlist></Postlist> -->
 
         </div>
     </div>
