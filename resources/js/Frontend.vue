@@ -6,11 +6,6 @@
 
             <router-view></router-view>
 
-            <!-- <h1>Hello {{  message  }}</h1>
-
-            <h2>Lista Post</h2>
-
-            <Postlist></Postlist> -->
 
         </div>
     </div>

@@ -3,9 +3,10 @@
         <div class="col" v-for="post in posts" :key="post.id">
             <div class="card mb-4">
                 <div class="card-body">
-                    <h5 class="card-title">{{post.title}}</h5>
+                    <h5 class="card-title">{{  post.title  }}</h5>
                     <p class="card-text" v-html="post.content"></p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <router-link :to="{ name: 'posts.show', params: { slug: post.slug } }" class="btn btn-primary">Go
+                        somewhere</router-link>
                 </div>
             </div>
         </div>
@@ -22,15 +23,15 @@ export default {
             posts: []
         }
     },
-    methods:{
-        fetchPost(){
+    methods: {
+        fetchPost() {
             axios.get("/api/posts")
-            .then((resp)=>{
-              this.posts = resp.data
-            })
+                .then((resp) => {
+                    this.posts = resp.data
+                })
         }
     },
-    mounted(){
+    mounted() {
         this.fetchPost();
     }
 }
